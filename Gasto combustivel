@@ -1,0 +1,9 @@
+#GASTO DE COMBUSTIVEL
+
+hora = int(input("Quantas horas foram a viagem? "))
+kime = int(input("Quantos kms foram rodados? "))
+distancia = (hora * kime)
+litro = (distancia / 12)
+print(f"{litro:.3f}")
+
+#exercicio BEECROWD
