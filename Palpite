@@ -1,0 +1,16 @@
+import random
+
+secret = random.randint(1,10)
+tentativa = None
+
+print("Tente adivinhar o número entre 1 e 10")
+
+while tentativa != secret:
+  tentativa = int(input("Digite seu palpite: "))
+
+  if tentativa < secret:
+    print("Muito Baixo!")
+  elif tentativa > secret:
+    print("Muito Alto!")
+  else:
+    print("Parabens! você acertou!")
