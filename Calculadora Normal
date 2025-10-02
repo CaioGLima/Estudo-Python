@@ -1,0 +1,35 @@
+#Calculadora normal
+
+while True:
+  print("----Menu----")
+  print("1. Adicao")
+  print("2. Subtracao")
+  print("3. Multiplicacao")
+  print("4. Divisao")
+  print("5. Sair")
+
+  opcao = int(input("Qual operação deseja fazer: "))
+
+  if opcao == 1:
+    a = int(input("Qual o primeiro numero: "))
+    b = int(input("Qual o segundo numero: "))
+    print("Seu resultado é: ",a + b)
+  elif opcao == 2:
+    a = int(input("Qual o primeiro numero: "))
+    b = int(input("Qual o segundo numero: "))
+    print("Seu resultado é: ",a - b)
+  elif opcao == 3:
+    a = int(input("Qual o primeiro numero: "))
+    b = int(input("Qual o segundo numero: "))
+    print("Seu resultado é: ",a * b)
+  elif opcao == 4:
+    a = int(input("Qual o primeiro numero: "))
+    b = int(input("Qual o segundo numero: "))
+    print("Seu resultado é: ",a / b)
+
+  elif opcao == 5:
+    print("Programa encerrao")
+    break
+
+  else:
+    print("Opcao errada")
