@@ -1,0 +1,35 @@
+#Calculadora Indice Massa Corporal
+while True:
+  print("----Menu----")
+  print("1. Calcular")
+  print("2. Sair")
+
+  opcao = int(input("Selecione uma das opcoes acima: "))
+  if opcao == 1:
+    NOME = input("Qual o seu nome: ")
+    ALTURA = float(input("Indique sua altura: "))
+    PESO = float(input("Indique seu peso: "))
+
+    #Caluculo do IMC
+    IMC = (PESO / ALTURA**2)
+
+    if IMC < 18.5:
+      CLASSIFICACAO = ("Abaixo do peso")
+    elif 18.5 > IMC < 24.9:
+      CLASSIFICACAO = ("Peso normal")
+    elif 25.0 > IMC < 29.9:
+      CLASSIFICACAO = ("Sobrepeso")
+    elif 30.0 > IMC < 34.9:
+      CLASSIFICACAO = ("Obesidade Grau I")
+    elif 35.0 > IMC < 39.9:
+      CLASSIFICACAO = ("Obesidade Grau II")
+    elif IMC > 40.0:
+      CLASSIFICACAO = ("Obesidade Grau III")
+    print("Olá ", NOME,"! O seu IMC e " , IMC,"- Classificacao: ",CLASSIFICACAO)
+
+  elif opcao == 2:
+    print("Programa encerrado")
+    break
+
+  else:
+    print("Opcao errada")
