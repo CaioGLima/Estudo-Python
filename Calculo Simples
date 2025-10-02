@@ -1,0 +1,12 @@
+#CALCULO SIMPLES
+peca1 = input("Informe os valores da peça 1: Codigo - numero - valor ").split()
+peca2 = input("Informe os valores da peça 2: Codigo - numero - valor ").split()
+
+valor1 =float(peca1[2])
+valor2 =float(peca2[2])
+
+valor_total = (valor1 + valor2)
+
+print("VALOR A PAGAR: R$ ",valor_total)
+
+#exercicio BEECROWD
