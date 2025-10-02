@@ -1,0 +1,56 @@
+#Usuario escreve
+print("CADASTRO")
+nome = input("Digite seu nome: ")
+sobrenome = input("Digite seu sobrenome: ")
+ano_nascimento = input("Digite em que Ano nasceu: ")
+cidade = input("Digite sua cidade: ")
+objetivo = input("Qual o seu Objetivo: ")
+numero_favorito = input ("Qual seu numero favorito entre 1 a 9: ")
+n = int(numero_favorito)
+ANO_ATUAL = int(2025)
+IDADE = ANO_ATUAL - int(ano_nascimento)
+NOME_COMPLETO = nome + sobrenome
+espacos =len((NOME_COMPLETO))
+espacos = str(espacos)
+USUARIO = nome[:3]  + espacos + ano_nascimento[-2:]
+
+#Inicio
+APP_NAME = "RESUMO DO CADASTRO - "
+print("=" * len(APP_NAME))
+print(APP_NAME + nome, sobrenome)
+print("=" * len(APP_NAME))
+
+#Relatório
+print("RELATORIO")
+print("Seu nome completo é:", nome, sobrenome)
+print("Sua idade é :", IDADE, "anos")
+print("Seu nome tem esse tanto de letras:" , len(nome) + len(sobrenome))
+print("Seu usúario de login é:",USUARIO)
+print("-" * (n))
+print("=" * len(APP_NAME))
+
+#Aritmética
+print("NUMEROS")
+print("O Dobro do seu num Favorito:")
+print(n * 2)
+print("O Triplo do seu num Favorito:")
+print(n * 3)
+print("O Quadrado do seu num Favorito:")
+print(n ** 2)
+print("A Metade Inteira do seu num Favorito:")
+print(n // 2)
+print("Sua Idade em Meses:")
+print(IDADE * 12)
+print("Sua Idade em Dias:")
+print(IDADE * 365)
+print("Esse é o Resto da Idade:")
+print(IDADE % n)
+print("Suas Decadas Vividas:")
+print(IDADE // 10)
+print("Soma dos Digitos Anos:")
+print(int(ano_nascimento[0]) + int(ano_nascimento[1]) + int(ano_nascimento[2]) + int(ano_nascimento[3]))
+
+#Encerramento
+print("=" * len(APP_NAME))
+print("Obrigado por fazer seu cadastro")
+print("=" * len(APP_NAME))
