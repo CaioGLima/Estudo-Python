@@ -1,0 +1,10 @@
+#SALARIO COM BONUS
+
+nome = input("Digite seu nome: ")
+sal_fixo = float(input("Digite seu ganho fixo: "))
+vendas = float(input("Digite o total de vendas do mes: "))
+total = float(vendas * 0.15)
+sal_bonus = float(total + sal_fixo)
+print("O total a receber é: ", sal_bonus)
+
+#Exercicio BEECROWD
