@@ -1,0 +1,32 @@
+print("------FORMULA DE BASKHARA------")
+a= int(input("Informe o valor de a: "))
+b= int(input("Informe o valor de b: "))
+c= int(input("Informe o valor de c: "))
+
+DELTA = (b**2 - 4*a*c)
+print("Esse é o valor de Delta: ",DELTA)
+print(DELTA**0.5)
+
+while True:
+
+  print("1. Delta positivo")
+  print("2. Deta negativo")
+  print("3. sair")
+
+  opcao = int(input("Selecione uma das opcoes acima: "))
+  if opcao == 1:
+    print(-b)
+    print(DELTA**0.5)
+    print(2*a)
+    print(float((-b + DELTA**0.5) / (2*a)))
+
+
+  elif opcao == 2:
+    print(float((-b - DELTA**0.5) / (2*a)))
+
+  elif opcao == 3:
+    print("Programa encerrado")
+    break
+
+  else:
+    print("Opcao errada")
